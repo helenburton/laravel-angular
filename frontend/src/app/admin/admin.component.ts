@@ -9,6 +9,7 @@ export class AdminComponent implements OnInit {
 
   showNotifMenu: boolean = false;
   showUserMenu: boolean = false;
+  showSidebar: boolean = false;
 
   constructor() { }
 
@@ -23,6 +24,10 @@ export class AdminComponent implements OnInit {
   clickNotifMenu(): void{
     this.showNotifMenu = !this.showNotifMenu;
     this.showUserMenu = false;
+  }
+
+  toggleSidebar(): void{
+    this.showSidebar = !this.showSidebar;
   }
 
 }
